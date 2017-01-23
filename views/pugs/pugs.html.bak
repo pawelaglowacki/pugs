@@ -1,0 +1,12 @@
+{{extend 'layout.html'}}
+<img src="{{=pug}}" alt=""/>
+
+<button onclick="myFunction()">WIĘCEJ MOPCIKÓW</button>
+
+
+
+<script>
+function myFunction() {
+    location.reload();
+}
+</script>
