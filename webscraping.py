@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 page = urllib2.urlopen('http://pugs.tumblr.com/').read()
 
-soup = BeautifulSoup(page)
+soup = BeautifulSoup(page, "lxml")
 soup.prettify()
 
 pugs = soup.findAll(attrs={'class' : 'photo'})
